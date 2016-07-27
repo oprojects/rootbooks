@@ -40,7 +40,7 @@ RUN pip install scikit-learn
 # Download and install ROOT master
 WORKDIR /opt
 RUN wget http://files.oproject.org/root_v6.07.07.Linux-unknown-gcc4.9.relwithdebinfo.tar.gz
-RUN tar -xzvf http://files.oproject.org/root_v6.07.07.Linux-unknown-gcc4.9.relwithdebinfo.tar.gz
+RUN tar -xzvf root_v6.07.07.Linux-unknown-gcc4.9.relwithdebinfo.tar.gz
 
 USER main
 
