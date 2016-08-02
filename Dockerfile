@@ -54,7 +54,7 @@ ENV PYTHONPATH      "$ROOTSYS/lib:$PYTHONPATH"
 
 # Set ROOT environment for ROOT-R
 ENV ROOT_INCLUDE_PATH "/usr/share/R/include:/usr/local/lib/R/site-library/Rcpp/include/:/usr/local/lib/R/site-library/RInside/include/"
-ENV ROOT_LIBRARY_PATH "/usr/lib/R/lib:/usr/local/lib/R/site-library/Rcpp/libs/:/usr/local/lib/R/site-library/RInside/lib/"
+ENV LD_LIBRARY_PATH "$LD_LIBRARY_PATH:/usr/lib/R/lib:/usr/local/lib/R/site-library/Rcpp/libs/:/usr/local/lib/R/site-library/RInside/lib/"
 
 
 # Customise the JupyROOT environment
