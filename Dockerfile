@@ -50,7 +50,7 @@ WORKDIR /home/main
 ENV ROOTSYS         "/opt/root"
 ENV PATH            "$ROOTSYS/bin:$ROOTSYS/bin/bin:$PATH"
 ENV LD_LIBRARY_PATH "$ROOTSYS/lib:$LD_LIBRARY_PATH"
-ENV PYTHONPATH      "$ROOTSYS/lib:$PYTHONPATH"
+ENV PYTHONPATH      "$ROOTSYS/lib:$ROOTSYS/lib/JupyROOT:$PYTHONPATH"
 
 # Set ROOT environment for ROOT-R
 ENV ROOT_INCLUDE_PATH "/usr/share/R/include:/usr/local/lib/R/site-library/Rcpp/include/:/usr/local/lib/R/site-library/RInside/include/"
